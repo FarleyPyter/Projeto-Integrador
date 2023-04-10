@@ -14,7 +14,7 @@ header.pack(side=tk.TOP, fill=tk.X)
 #nome do app e logo
 
 app_name = tk.Label(header, text="Lafaiete Cultural", font=("Arial", 24, "bold"))
-logo = tk.PhotoImage(file="logo.png")
+logo = tk.PhotoImage(file="TRABALHO\Imagens\logo.png")
 app_logo = tk.Label(header, image=logo)
 app_name.grid(row=0, column=1)
 app_logo.grid(row=0, column=0)
@@ -96,9 +96,9 @@ def register():
     finally:
         conn.close()
 
-# Botão de cadastro na janela de login
+"""  # Botão de cadastro na janela de login
 register_button = tk.Button(login_window, text="Cadastrar", command=create_register_window)
-register_button.pack()
+register_button.pack() 
 
 #janela para o usuário se cadastrar no nosso app. 
 def create_register_window():
@@ -165,6 +165,6 @@ def create_login_window():
     login_button.grid(row=2, columnspan=2, pady=10)
     
     #associar a função `create_login_window` ao botão "Logar" do menu principal
-    button3 = tk.Button(menu, text="Logar", command=create_login_window)
+    button3 = tk.Button(menu, text="Logar", command=create_login_window) """
 
-    window.mainloop()
+window.mainloop()
